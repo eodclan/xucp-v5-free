@@ -16,7 +16,21 @@ xUCP Free V5 (Open Source) Readme
 *  5. SSL
 
 ## Functions of the xUCP Free V5:
-*  Soon...
+*  1. Login & Register System
+*  2. Staff Tools ( User Changer, Playerlist, News Creator, Rules Manager, Whitelist Manager, Keyboard Manager )
+*  3. Language System ( English & German )
+*  4. Support system
+*  5. Edit profile
+*  6. Site Settings
+*  7. Clients & Servers
+*  8. Server Status System
+*  9. BB-Code-Editor System
+* 10. Game Server Status System
+* 11. Upgrade Notice System
+* 12. Class Admin Settings System
+* 13. Team Control System
+* 14. Web Site System: Homepage
+* 15. Web Site System: Imprint
 
 
 best regards
