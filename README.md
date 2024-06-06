@@ -26,13 +26,13 @@ xUCP Free V5 (Open Source) Readme
 *  8. Server Status System
 *  9. BB-Code-Editor System
 * 10. Game Server Status System
-* 11. Upgrade Notice System
-* 12. Class Admin Settings System
-* 13. Team Control System
-* 14. Web Site System: Homepage
-* 15. Web Site System: Imprint
-* 16. Discord Message System
-
+* 11. Class Admin Settings System
+* 12. Team Control System
+* 13. Web Site System: Homepage
+* 14. Web Site System: Imprint
+* 15. Discord Message System
+* 15. Uptime System
+  
 
 best regards
 
