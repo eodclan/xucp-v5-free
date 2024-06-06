@@ -7,6 +7,10 @@ xUCP Free V5 (Open Source) Readme
 *  https://derstr1k3r.com
 *  https://discord.gg/xg5mnYUWch
 
+xUCP Free V5 Log in
+*  Nickname: admin
+*  Password: 12345678
+
 ## Prerequisite for using the xUCP Free V5:
 *  1. MySQL servers
 *  2. Web server(XAMPP is not supported!)
