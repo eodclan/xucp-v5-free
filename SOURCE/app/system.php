@@ -46,7 +46,6 @@ require_once(dirname(__FILE__) . "/class/xucp_class_user_profile_updater.php");
 // Autoload System
 // ************************************************************************************//
 $user = new xUCP_System($db);
-$user->xucp_db_sync();
 $user->xucp_secure_lang();
 $user->xucp_session_site();
 

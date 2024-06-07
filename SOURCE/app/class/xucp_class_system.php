@@ -11,40 +11,6 @@
 // * License Typ: GNU GPLv3
 // ************************************************************************************//
 class xUCP_System {
-    // DB Sync System
-    public function xucp_db_sync(): void {
-        global $db;
-        $db_sync_u_id = 1;
-    
-        // Verwenden Sie eine vorbereitete Anweisung mit Platzhaltern für die Sicherheit
-        $select_stmt = $db->prepare("SELECT dbsync_hostname, dbsync_port, dbsync_dbname, dbsync_username, dbsync_password FROM xucp_dbsync WHERE id = :id");
-        $select_stmt->bindParam(':id', $db_sync_u_id, PDO::PARAM_INT);
-        $select_stmt->execute();
-    
-        $db_sync = $select_stmt->fetch(PDO::FETCH_ASSOC);
-    
-        if ($db_sync) {
-            // htmlentities ist hier überflüssig, da keine Ausgabe an den Browser erfolgt
-            $db_sync_host = $db_sync["dbsync_hostname"];
-            $db_sync_port = $db_sync["dbsync_port"];
-            $db_sync_user = $db_sync["dbsync_username"];
-            $db_sync_password = $db_sync["dbsync_password"];
-            $db_sync_name = $db_sync["dbsync_dbname"];
-    
-            try {
-                // Verwenden von PDO zur Herstellung der Datenbankverbindung
-                $db_sync_con = new PDO("mysql:host={$db_sync_host};port={$db_sync_port};dbname={$db_sync_name}", $db_sync_user, $db_sync_password);
-                $db_sync_con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-                
-                // Wenn weitere Synchronisationslogik erforderlich ist, kann diese hier hinzugefügt werden
-                
-            } catch (PDOException $e) {
-                // Ausführliche Fehlermeldung für die Fehlersuche (sollte in der Produktion geloggt werden)
-                error_log("Database connection failed: " . $e->getMessage());
-            }
-        }
-    }    
-    
     // Checking Language System
     public function xucp_secure_lang(): void
     {
