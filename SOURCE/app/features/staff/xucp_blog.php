@@ -53,7 +53,7 @@ if(isset($_REQUEST['xucp_submit']))
                         $webhook->setUsername(DC_WEBHOOK_NAME);
                         $webhook->setAvatarUrl(DC_WEBHOOK_AVATAR);
                         $webhook->setAuthor(DC_WEBHOOK_NAME);
-                        $webhook->setFooter('Powered by xUCP Free v5.0.1874');
+                        $webhook->setFooter('Powered by xUCP Free v5.0.1875');
                         
                         // Definieren des Inhalts, den du senden möchtest
                         $content = DC_WEBHOOK_INFO_BLOG_ADDED;

@@ -15,9 +15,9 @@ xUCP Free V5 Log in
 *  1. MySQL servers
 *  2. Web server(XAMPP is not supported!)
 *  3. Mail server
-*  3. Php 8.2 or newer
-*  4. PHP8-PDO
-*  5. SSL
+*  4. Php 8.2 or newer
+*  5. PHP8-PDO
+*  6. SSL
 
 ## Functions of the xUCP Free V5:
 *  1. Login & Register System
