@@ -37,6 +37,7 @@ xUCP Free V5 Log in
 * 15. Discord Message System
 * 15. Uptime System
 * 16. xUCP Free V5 Setup Check System
+* 17. xUCP Free V5 Update Status
   
 
 best regards
