@@ -13,7 +13,7 @@
 class xUCP_SetupCheck {
 
     public function xucp_pro_setup_check(): void {
-        if (version_compare(PHP_VERSION, '8.2.15') < 0) {
+        if (version_compare(PHP_VERSION, '8.2.20') < 0) {
             $user = new xUCP_Themes($db);
             $user->xucp_header_install("xUCP Free V5 Setup Check");
             $user->xucp_content_install();

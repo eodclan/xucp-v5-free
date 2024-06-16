@@ -47,7 +47,17 @@ class xUCP_Updater {
     }
 
     private function readVersionFromFile(string $versionFile): ?string {
-        $version = file_get_contents($versionFile);
+        // Create a context to bypass SSL verification
+        $contextOptions = [
+            "ssl" => [
+                "verify_peer" => false,
+                "verify_peer_name" => false,
+            ],
+        ];
+        $context = stream_context_create($contextOptions);
+
+        // Use the context when calling file_get_contents
+        $version = file_get_contents($versionFile, false, $context);
 
         if ($version === false) {
             return null;
@@ -62,5 +72,3 @@ class xUCP_Updater {
         return "$protocol://$host";
     }
 }
-
-    
